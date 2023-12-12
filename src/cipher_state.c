@@ -3,7 +3,6 @@
 #include <string.h>
 #include "cipher_state.h"
 
-
 States* States_create(const char* str) {
     States* states = malloc(sizeof(States));
 
@@ -37,8 +36,8 @@ void States_free(States* this) {
 
 void xorshift_32(BLOCK* state) {
     unsigned int x = *state;
-	x ^= x << 13;
-	x ^= x >> 17;
-	x ^= x << 5;
+    x ^= x << 13;
+    x ^= x >> 17;
+    x ^= x << 5;
     *state = x;
 }

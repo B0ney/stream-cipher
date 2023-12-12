@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "cipher.h"
 
-
 StreamCipher* StreamCipher_create() {
     StreamCipher* cipher = malloc(sizeof(StreamCipher)); 
     return cipher;

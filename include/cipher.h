@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "cipher_state.h"
 
-
 struct StreamCipher {
     States* states;
     int current_block;
